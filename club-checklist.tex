@@ -2,10 +2,38 @@
 
 \newcommand\class{How To Run a Club}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% MathSoc Club Checklist 
+%% Maya Gusak, Membership Fee Committee, S21
+%%
+%% At the start of the term, please update the following (see line 20):
+%%  Term and year
+%%  MathSoc exec names
+%%  Budget and budget slideshow link
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \usepackage[utf8]{inputenc}
 \usepackage{mayamath}
 \usepackage{hyperref}
 \usepackage{color,soul}
+
+%%%%%%%%%%%%%%% UPDATE THIS AT THE START OF THE TERM %%%%%%%%%%%%%% 
+% Please keep the space after the names
+
+% Define MathSoc exec names
+\newcommand{\MathSocVPFName}{Sandra Huang }      
+\newcommand{\MathSocVPIName}{Abhiraj Lamba }
+\newcommand{\MathSocVPOName}{Arnav Gupta }
+\newcommand{\MathSocPrezName}{Harleen Bhandal }
+
+% Define the current term
+\newcommand{\termandyear}{F21 }
+
+% Define the links to budget and budget slideshow
+% When updating, just replace the link
+\newcommand{\budget}{\href{https://drive.google.com/file/d/1uQIh7Qp33NX0TgJhl3DdY-r2HqZzQKuZ/view}{\underline{Budget} }}
+\newcommand{\budgetSlideshow}{\href{https://docs.google.com/presentation/d/1STBZmvycCzdxlngaaHDIre7LndTr-057gBXYInwFuVg/edit?usp=sharing}{\underline{Budget Meeting Slideshow} }}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \makeatletter
 \newcommand{\setword}[2]{%
@@ -14,12 +42,11 @@
 }
 \makeatother
 
+% Define bullet point formatting
 \renewcommand{\labelitemi}{$\square$}
 \renewcommand\labelitemii{\textbullet}
 \renewcommand\labelitemiii{$\square$}
 
-% Define the current term
-\newcommand{\termandyear}{F21}
 
 % Define important MathSoc emails
 \newcommand{\MathSocVPF}{\href{mailto:vpf@mathsoc.uwaterloo.ca}{\underline{MathSoc VPF} }}
@@ -27,22 +54,16 @@
 \newcommand{\MathSocVPO}{\href{mailto:vpo@mathsoc.uwaterloo.ca}{\underline{MathSoc VPO} }}
 \newcommand{\MathSocPrez}{\href{mailto:prez@mathsoc.uwaterloo.ca}{\underline{MathSoc President} }}
 
-% Define MathSoc exec names
-\newcommand{\MathSocVPFName}{Sandra Huang}
-\newcommand{\MathSocVPIName}{Abhiraj Lamba}
-\newcommand{\MathSocVPOName}{Arnav Gupta}
-\newcommand{\MathSocPrezName}{Harleen Bhandal}
 
 % Define important external links
-\newcommand{\budget}{\href{https://drive.google.com/file/d/1uQIh7Qp33NX0TgJhl3DdY-r2HqZzQKuZ/view}{\underline{Budget} }}
-\newcommand{\budgetSlideshow}{\href{https://docs.google.com/presentation/d/1STBZmvycCzdxlngaaHDIre7LndTr-057gBXYInwFuVg/edit?usp=sharing}{\underline{Budget Meeting Slideshow} }}
 \newcommand{\clubsEventForm}{\href{https://wusa.ca/clubs/clubs-important-forms/clubs-event-form/done?sid=41744&token=1a166c8e45c6113b0322bd3e34fa6fb4}{\underline{Clubs Event Form} }}
 \newcommand{\chequeReimbursementForm}{\href{https://mathsoc.uwaterloo.ca/wp-content/uploads/2021/02/Club-Cheque-Request-Form.pdf}{\underline{MathSoc Cheque Request Form} }}
 \newcommand{\mathsocClubPolicy}{\href{https://mathsoc.uwaterloo.ca/wp-content/uploads/Mathsoc_Policies-1.pdf}{\underline{MathSoc Clubs Policy (Policy 6)} }}
-\newcommand{\membersite}{\href{https://member.wusa.ca/}{\underline{member.wusa.ca}}}
-\newcommand{\mathsocsite}{\href{https://mathsoc.uwaterloo.ca/}{\underline{Mathsoc Website}}}
-\newcommand{\mathsoclogo}{\href{https://drive.google.com/drive/folders/18v8yaagA74DqMqXaffVm3BGyS8Ze9e5m}{\underline{MathSoc Logo Guidelines}}}
-\newcommand{\colorbrand}{\href{https://uwaterloo.ca/brand/how-express-waterloos-brand/colour}{\underline{Waterloo Colours}}}
+\newcommand{\membersite}{\href{https://member.wusa.ca/}{\underline{member.wusa.ca} }}
+\newcommand{\mathsocsite}{\href{https://mathsoc.uwaterloo.ca/}{\underline{Mathsoc Website} }}
+\newcommand{\mathsoclogo}{\href{https://drive.google.com/drive/folders/18v8yaagA74DqMqXaffVm3BGyS8Ze9e5m}{\underline{MathSoc Logo Guidelines} }}
+\newcommand{\colorbrand}{\href{https://uwaterloo.ca/brand/how-express-waterloos-brand/colour}{\underline{Waterloo Colours} }}
+
 
 % Define section links for cross-referencing
 \newcommand{\membership}{\hyperref[sec:membership]{\underline{MathSoc members}}}
@@ -53,6 +74,8 @@
 \begin{document}
 \maketitle
 Note about this document: every underlined word is a clickable link that refers you to the needed resource :)
+
+%%%%%%%%%%%%%% Start of Term %%%%%%%%%%%%%%
 \section*{Start of Term}
 \begin{itemize}
     \item \textbf{Elect your execs}
@@ -67,9 +90,9 @@ Note about this document: every underlined word is a clickable link that refers 
             \item List of execs
             \item List of events you want to run in the term
         \end{itemize}
-        \item Email to \MathSocVPF 
+        \item[$\square$] Email to \MathSocVPF 
         \begin{itemize}
-            \item Email subject: ``Club Records \termandyear - $<$Club Name$>$''
+            \item[\textperiodcentered] Email subject: ``Club Records \termandyear - $<$Club Name$>$''
         \end{itemize}
     \end{itemize}
     \item \textbf{Create a budget}
@@ -87,27 +110,28 @@ Note about this document: every underlined word is a clickable link that refers 
                 \item Budget carefully! You can’t go over budget
             \end{itemize}
             \item Add notes to each cell to explain the expense
-            \item Email to \MathSocVPF  
-            \begin{itemize}
-                \item Email subject: ``Budget Submission \termandyear - $<$Club Name$>$''
-            \end{itemize}
         \end{itemize}
+        \item[$\square$] Email to \MathSocVPF  
+            \begin{itemize}
+                \item[\textperiodcentered] Email subject: ``Budget Submission \termandyear - $<$Club Name$>$''
+            \end{itemize}
                 
     \end{itemize}
     \item \textbf{Club finances audit}
     \begin{itemize}
-        \item where to find document??
+        \item Create a document
+        \item Ask the previous club VPF and compile the following info:
         \begin{itemize}
-            \item Create summary of previous term’s revenues and expenses
+            \item Summary of previous term’s revenues and expenses
             \item Add a note for each line item that explains the expense/revenue
             \begin{itemize}
                 \item Include event number, if applicable
             \end{itemize}
-            \item Email to \MathSocVPF 
-            \begin{itemize}
-                \item Email subject: ``Club Finances Audit \termandyear - $<$Club Name$>$''
-            \end{itemize}
         \end{itemize}
+        \item[$\square$] Email to \MathSocVPF 
+            \begin{itemize}
+                \item[\textperiodcentered] Email subject: ``Club Finances Audit \termandyear - $<$Club Name$>$''
+            \end{itemize}
     \end{itemize}
     \item \textbf{Events \textit{before} budget meeting}
     \begin{itemize}
@@ -148,9 +172,12 @@ Note about this document: every underlined word is a clickable link that refers 
 \renewcommand{\labelitemi}{\textbullet}
 \renewcommand\labelitemii{$\square$}
 \renewcommand\labelitemiii{\textbullet}
+
+%%%%%%%%%%%%%% During the Term %%%%%%%%%%%%%%
 \section*{During the Term}
 \par\rule{\textwidth}{0.4pt}\\
 
+% Running events
 {\Large HOW TO RUN AN EVENT}
 \begin{itemize}
     \item \textbf{Before an event}
@@ -191,13 +218,21 @@ Note about this document: every underlined word is a clickable link that refers 
             \end{itemize}
         \end{itemize}
         \item[3)] Get your \pop (unless in-person event and $<\$100$)
-        \item Send 1), 2), and 3) in an email to \MathSocVPF
+        \item Submit 1), 2), and 3) 
         \begin{itemize}
-            \item[\textperiodcentered] Email subject: ``Cheque Request \termandyear - $<$Club Name$>$''
-        \end{itemize} 
+            \item \textit{Online events}
+            \begin{itemize}
+                \item[$\square$] Send to \MathSocVPF; email subject: ``Cheque Request \termandyear - $<$Club Name$>$''
+            \end{itemize}
+            \item \textit{In-person events}
+            \begin{itemize}
+                \item[$\square$] Hand in to MathSoc office (MC 3038)
+            \end{itemize}
+        \end{itemize}
     \end{itemize}
     
 \par\rule{\textwidth}{0.4pt}
+
 \newpage
     \item \textbf{Non-budgeted expenses}
     \begin{itemize}
@@ -219,6 +254,8 @@ Note about this document: every underlined word is a clickable link that refers 
 \renewcommand{\labelitemi}{$\square$}
 \renewcommand\labelitemii{\textbullet}
 \renewcommand\labelitemiii{$\square$}
+
+%%%%%%%%%%%%%% End of Term %%%%%%%%%%%%%%
 \section*{End of Term}
 \begin{itemize}
     \item \textbf{Submit records}
@@ -236,6 +273,7 @@ Note about this document: every underlined word is a clickable link that refers 
     \end{itemize}
 \end{itemize}
 
+%%%%%%%%%%%%%% Proof of Payment %%%%%%%%%%%%%%
 \section*{What is a Proof of Payment?}
 \label{sec:pop}
 \begin{itemize}
@@ -254,6 +292,7 @@ Note about this document: every underlined word is a clickable link that refers 
     \item[\textbullet] Blur out all other information
 \end{itemize}
 
+%%%%%%%%%%%%%% MathSoc Membership %%%%%%%%%%%%%%
 \section*{Check that Someone is a MathSoc Member}
 \label{sec:membership}
 \begin{itemize}
@@ -275,6 +314,7 @@ Note about this document: every underlined word is a clickable link that refers 
 \end{itemize}
 
 \renewcommand\labelitemi{\textbullet}
+%%%%%%%%%%%%%% Other Resources %%%%%%%%%%%%%%
 \section*{Useful Links}
 \label{sec:otherresources}
 \begin{itemize}
@@ -289,6 +329,8 @@ Note about this document: every underlined word is a clickable link that refers 
     \item \colorbrand
 \end{itemize}
 
+\renewcommand\labelitemii{\textperiodcentered}
+%%%%%%%%%%%%%% Where to Get Help %%%%%%%%%%%%%%
 \section*{Where to Get Help}
 \begin{itemize}
     \item \MathSocVPF : \MathSocVPFName
@@ -304,7 +346,7 @@ Note about this document: every underlined word is a clickable link that refers 
     \end{itemize}
     \item \MathSocVPO : \MathSocVPOName
     \begin{itemize}
-        \item \mathsocsite
+        \item \mathsocsite queries
     \end{itemize}
     \item \MathSocPrez : \MathSocPrezName
     \begin{itemize}
