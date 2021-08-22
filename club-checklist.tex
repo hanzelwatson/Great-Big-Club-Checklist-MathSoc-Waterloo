@@ -1,0 +1,318 @@
+\documentclass[utf8]{article}
+
+\newcommand\class{How To Run a Club}
+
+\usepackage[utf8]{inputenc}
+\usepackage{mayamath}
+\usepackage{hyperref}
+\usepackage{color,soul}
+
+\makeatletter
+\newcommand{\setword}[2]{%
+  \phantomsection
+  #1\def\@currentlabel{\unexpanded{#1}}\label{#2}%
+}
+\makeatother
+
+\renewcommand{\labelitemi}{$\square$}
+\renewcommand\labelitemii{\textbullet}
+\renewcommand\labelitemiii{$\square$}
+
+% Define the current term
+\newcommand{\termandyear}{F21}
+
+% Define important MathSoc emails
+\newcommand{\MathSocVPF}{\href{mailto:vpf@mathsoc.uwaterloo.ca}{\underline{MathSoc VPF} }}
+\newcommand{\MathSocVPI}{\href{mailto:vpi@mathsoc.uwaterloo.ca}{\underline{MathSoc VPI} }}
+\newcommand{\MathSocVPO}{\href{mailto:vpo@mathsoc.uwaterloo.ca}{\underline{MathSoc VPO} }}
+\newcommand{\MathSocPrez}{\href{mailto:prez@mathsoc.uwaterloo.ca}{\underline{MathSoc President} }}
+
+% Define MathSoc exec names
+\newcommand{\MathSocVPFName}{Sandra Huang}
+\newcommand{\MathSocVPIName}{Abhiraj Lamba}
+\newcommand{\MathSocVPOName}{Arnav Gupta}
+\newcommand{\MathSocPrezName}{Harleen Bhandal}
+
+% Define important external links
+\newcommand{\budget}{\href{https://drive.google.com/file/d/1uQIh7Qp33NX0TgJhl3DdY-r2HqZzQKuZ/view}{\underline{Budget} }}
+\newcommand{\budgetSlideshow}{\href{https://docs.google.com/presentation/d/1STBZmvycCzdxlngaaHDIre7LndTr-057gBXYInwFuVg/edit?usp=sharing}{\underline{Budget Meeting Slideshow} }}
+\newcommand{\clubsEventForm}{\href{https://wusa.ca/clubs/clubs-important-forms/clubs-event-form/done?sid=41744&token=1a166c8e45c6113b0322bd3e34fa6fb4}{\underline{Clubs Event Form} }}
+\newcommand{\chequeReimbursementForm}{\href{https://mathsoc.uwaterloo.ca/wp-content/uploads/2021/02/Club-Cheque-Request-Form.pdf}{\underline{MathSoc Cheque Request Form} }}
+\newcommand{\mathsocClubPolicy}{\href{https://mathsoc.uwaterloo.ca/wp-content/uploads/Mathsoc_Policies-1.pdf}{\underline{MathSoc Clubs Policy (Policy 6)} }}
+\newcommand{\membersite}{\href{https://member.wusa.ca/}{\underline{member.wusa.ca}}}
+\newcommand{\mathsocsite}{\href{https://mathsoc.uwaterloo.ca/}{\underline{Mathsoc Website}}}
+\newcommand{\mathsoclogo}{\href{https://drive.google.com/drive/folders/18v8yaagA74DqMqXaffVm3BGyS8Ze9e5m}{\underline{MathSoc Logo Guidelines}}}
+\newcommand{\colorbrand}{\href{https://uwaterloo.ca/brand/how-express-waterloos-brand/colour}{\underline{Waterloo Colours}}}
+
+% Define section links for cross-referencing
+\newcommand{\membership}{\hyperref[sec:membership]{\underline{MathSoc members}}}
+\newcommand{\otherresources}{\hyperref[sec:otherresources]{\underline{Further Resources}}}
+\newcommand{\pop}{\hyperref[sec:pop]{\underline{Proof of Payment}}}
+
+
+\begin{document}
+\maketitle
+Note about this document: every underlined word is a clickable link that refers you to the needed resource :)
+\section*{Start of Term}
+\begin{itemize}
+    \item \textbf{Elect your execs}
+    \begin{itemize}
+        \item All execs must be \membership
+    \end{itemize}
+    \item \textbf{Submit records}
+    \begin{itemize}
+        \item Make a document with this info:
+        \begin{itemize}
+            \item Contact email
+            \item List of execs
+            \item List of events you want to run in the term
+        \end{itemize}
+        \item Email to \MathSocVPF 
+        \begin{itemize}
+            \item Email subject: ``Club Records \termandyear - $<$Club Name$>$''
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{Create a budget}
+    \begin{itemize}
+        \item \MathSocVPF will send the \budget to your club email
+        \begin{itemize}
+            \item Make a copy of the Budget
+            \item Fill in your budget
+            \begin{itemize}
+                \item Decide on events for the term
+                \item Decide on expenses
+                \item Put repeated events in the same row
+                \item Add new rows if needed
+                \item Don't delete rows
+                \item Budget carefully! You can’t go over budget
+            \end{itemize}
+            \item Add notes to each cell to explain the expense
+            \item Email to \MathSocVPF  
+            \begin{itemize}
+                \item Email subject: ``Budget Submission \termandyear - $<$Club Name$>$''
+            \end{itemize}
+        \end{itemize}
+                
+    \end{itemize}
+    \item \textbf{Club finances audit}
+    \begin{itemize}
+        \item where to find document??
+        \begin{itemize}
+            \item Create summary of previous term’s revenues and expenses
+            \item Add a note for each line item that explains the expense/revenue
+            \begin{itemize}
+                \item Include event number, if applicable
+            \end{itemize}
+            \item Email to \MathSocVPF 
+            \begin{itemize}
+                \item Email subject: ``Club Finances Audit \termandyear - $<$Club Name$>$''
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{Events \textit{before} budget meeting}
+    \begin{itemize}
+        \item You can run events before budget meeting for \textbf{less than $\$500$}
+        \begin{itemize}
+            \item Email \MathSocVPF to arrange this
+            \begin{itemize}
+                \item Email subject: ``BOT Budget Approval \termandyear - $<$Club Name$>$''
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{Club budget info meeting}
+    \begin{itemize}
+        \item \MathSocVPF will send you the invite
+        \begin{itemize}
+            \item Attend the meeting 
+            \item Take notes
+        \end{itemize}
+        \item See \budgetSlideshow
+        \item See \otherresources
+    \end{itemize}
+    \item \textbf{MathSoc Budget meeting}
+    \begin{itemize}
+        \item One rep from the club needs to come
+        \begin{itemize}
+            \item Present the budget to MathSoc
+            \begin{itemize}
+                \item Explain a little bit about the events you want to run and the expenses you’ll have
+                \item Convince them to give you money
+                \item Alcohol at events needs to be approved explicitely
+                \item Be reasonable in your requests
+            \end{itemize}
+        \end{itemize}
+        \item Council will decide to accept, modify, or reduce your budget
+    \end{itemize}
+\end{itemize}
+
+\renewcommand{\labelitemi}{\textbullet}
+\renewcommand\labelitemii{$\square$}
+\renewcommand\labelitemiii{\textbullet}
+\section*{During the Term}
+\par\rule{\textwidth}{0.4pt}\\
+
+{\Large HOW TO RUN AN EVENT}
+\begin{itemize}
+    \item \textbf{Before an event}
+    \begin{itemize}
+        \item Fill out \textbf{14 days before}: \clubsEventForm
+        \begin{itemize}
+            \item Bookmark the \setword{\hl{EMAIL}}{Word:email} response (1-3 days)
+        \end{itemize}
+        \item Plan expenses according to your \budget
+        \item Email \MathSocVPI for marketing needs
+        \item Email \MathSocVPO to get volunteer positions listed on \mathsocsite
+        \item Follow \mathsoclogo for ads/posters
+    \end{itemize}
+    \item \textbf{During the event}
+    \begin{itemize}
+        \item Check that prize winners are \membership
+        \item Make all purchases yourself: keep the receipts!
+    \end{itemize}
+    \item \textbf{Getting refunded from MathSoc}
+    \begin{itemize}
+        \item[1)] Fill out \chequeReimbursementForm
+        \begin{itemize}
+            \item Find the budget line in the \budget 
+            \item Find the Event ID in the subject title of this \ref{Word:email}
+            \item List tax and tips separate
+            \item Ask a club signing officer (VPF or President) \textit{other than yourself} to sign 
+        \end{itemize}
+        \item[2)] Collect all your receipts
+        \begin{itemize}
+            \item \textit{Online events}
+            \begin{itemize}
+                \item Screenshot the receipts
+                \item $\geq \$100$: SAVE the receipt until reimbursed!!
+            \end{itemize}
+            \item \textit{In-person events}
+            \begin{itemize}
+                \item Get physical receipts (print if necessary)
+            \end{itemize}
+        \end{itemize}
+        \item[3)] Get your \pop (unless in-person event and $<\$100$)
+        \item Send 1), 2), and 3) in an email to \MathSocVPF
+        \begin{itemize}
+            \item[\textperiodcentered] Email subject: ``Cheque Request \termandyear - $<$Club Name$>$''
+        \end{itemize} 
+    \end{itemize}
+    
+\par\rule{\textwidth}{0.4pt}
+\newpage
+    \item \textbf{Non-budgeted expenses}
+    \begin{itemize}
+        \item Don't make this a habit
+        \item Email \MathSocVPF
+        \begin{itemize}
+            \item[\textperiodcentered] Email subject: ``Out-of-budget Expense \termandyear - $<$Club Name$>$''
+            \item[\textperiodcentered] $<\$100$: Have to be approved by \MathSocVPF
+            \item[\textperiodcentered] $\geq \$100$: Have to be approved by MathSoc Council
+        \end{itemize}
+    \end{itemize}
+    \item[\textbullet] \textbf{Amending constitution}
+    \begin{itemize}
+        \item Amend your constitution as necessary
+        \item Provide an updated copy of the constitution to the \MathSocPrez.
+    \end{itemize}
+\end{itemize}
+
+\renewcommand{\labelitemi}{$\square$}
+\renewcommand\labelitemii{\textbullet}
+\renewcommand\labelitemiii{$\square$}
+\section*{End of Term}
+\begin{itemize}
+    \item \textbf{Submit records}
+    \begin{itemize}
+        \item Collect the following info: 
+        \begin{itemize}
+            \item Full membership list
+            \item Club fees
+            \item Other revenue (ex. sales)
+        \end{itemize}
+        \item[$\square$] Email it to \MathSocVPF
+            \begin{itemize}
+                \item[\textperiodcentered] Email subject: ``End of Term Records \termandyear - $<$Club Name$>$''
+            \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\section*{What is a Proof of Payment?}
+\label{sec:pop}
+\begin{itemize}
+    \item[\textbullet] Go to your bank account
+    \item[\textbullet] Screenshot your account so the all of these are visible:
+    \begin{itemize}
+        \item[$\square$] Your name 
+        \item[$\square$] Transaction amounts
+        \begin{itemize}
+            \item[\textperiodcentered] Transaction can't be ``pending''
+        \end{itemize} 
+        \item[$\square$] Date of purchase
+        \item[$\square$] Vendor (the seller) 
+        \item[$\square$] $\geq \$100$: include account number 
+    \end{itemize}
+    \item[\textbullet] Blur out all other information
+\end{itemize}
+
+\section*{Check that Someone is a MathSoc Member}
+\label{sec:membership}
+\begin{itemize}
+    \item If they are on an academic term:
+    \begin{itemize}
+        \item Go to \membersite
+        \item Log in with your WatIAm
+        \item Click on your name in the top right
+        \item Click \textbf{Admin}
+        \item Click \textbf{Member Verification}
+        \item Click \textbf{Watiam Verification}
+        \item Enter the person's WatIAm 
+    \end{itemize}
+    \item If they are not on an academic term:
+    \begin{itemize}
+        \item Ask if they paid their mathsoc fee in their most recent academic term
+        \item Make them pinky promise that they're telling the truth
+    \end{itemize}
+\end{itemize}
+
+\renewcommand\labelitemi{\textbullet}
+\section*{Useful Links}
+\label{sec:otherresources}
+\begin{itemize}
+    \item \budget
+    \item \budgetSlideshow
+    \item \clubsEventForm
+    \item \chequeReimbursementForm
+    \item \mathsocClubPolicy
+    \item \membersite
+    \item \mathsocsite
+    \item \mathsoclogo
+    \item \colorbrand
+\end{itemize}
+
+\section*{Where to Get Help}
+\begin{itemize}
+    \item \MathSocVPF : \MathSocVPFName
+    \begin{itemize}
+        \item Funding
+        \item Budget
+        \item Membership fees
+    \end{itemize}
+    \item \MathSocVPI : \MathSocVPIName
+    \begin{itemize}
+        \item Club fairs
+        \item Outreach
+    \end{itemize}
+    \item \MathSocVPO : \MathSocVPOName
+    \begin{itemize}
+        \item \mathsocsite
+    \end{itemize}
+    \item \MathSocPrez : \MathSocPrezName
+    \begin{itemize}
+        \item All other queries
+    \end{itemize}
+\end{itemize}
+
+
+
+
+\end{document}

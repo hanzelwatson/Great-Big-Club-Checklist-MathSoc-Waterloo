@@ -1,0 +1,167 @@
+\ProvidesPackage{mayamath}
+
+%page setup
+\usepackage[margin=0.5in, marginparsep=0.25in]{geometry}
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\class}
+\rhead{Maya Gusak}
+\setlength{\textheight}{10in}
+\setlength{\topmargin}{-0.75in}
+\title{\vspace{-0.75in}\class}
+\author{A Guide for VPF's and Presidents}
+
+
+%packages
+\RequirePackage{amsthm}
+\RequirePackage{amsmath}
+\RequirePackage{amsfonts}
+\RequirePackage{amssymb}
+\RequirePackage[shortlabels]{enumitem}
+\RequirePackage{mathtools}
+\RequirePackage{xcolor}
+\RequirePackage{tikz}
+\RequirePackage{tikz-qtree}
+\RequirePackage[normalem]{ulem}
+
+% math cal letters
+\def\Acal{{\mathcal A}}
+\def\Bcal{{\mathcal B}}
+\def\Ccal{{\mathcal C}}
+\def\Dcal{{\mathcal D}}
+\def\Ecal{{\mathcal E}}
+\def\Fcal{{\mathcal F}}
+\def\Gcal{{\mathcal G}}
+\def\Hcal{{\mathcal H}}
+\def\Ical{{\mathcal I}}
+\def\Jcal{{\mathcal J}}
+\def\Kcal{{\mathcal K}}
+\def\Lcal{{\mathcal L}}
+\def\Mcal{{\mathcal M}}
+\def\Ncal{{\mathcal N}}
+\def\Ocal{{\mathcal O}}
+\def\Pcal{{\mathcal P}}
+\def\Qcal{{\mathcal Q}}
+\def\Rcal{{\mathcal R}}
+\def\Scal{{\mathcal S}}
+\def\Tcal{{\mathcal T}}
+\def\Ucal{{\mathcal U}}
+\def\Vcal{{\mathcal V}}
+\def\Wcal{{\mathcal W}}
+\def\Xcal{{\mathcal X}}
+\def\Ycal{{\mathcal Y}}
+\def\Zcal{{\mathcal Z}}
+
+% sets
+\newcommand{\bbQ}{\mathbb{Q}}
+\newcommand{\bbR}{\mathbb{R}}
+\newcommand{\bbZ}{\mathbb{Z}}
+\newcommand{\bbC}{\mathbb{C}}
+\newcommand{\bbN}{\mathbb{N}}
+
+% aesthetics
+\renewcommand{\emptyset}{\varnothing}
+\renewcommand{\epsilon}{\varepsilon}
+
+% theorem commands
+\swapnumbers
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{subthm}{Theorem}[subsection]
+\newtheorem{subprop}[subthm]{Proposition}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{fact}[thm]{Fact}
+\newtheorem{subfact}[subthm]{Fact}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{subcor}[subthm]{Corollary}
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{sublemma}[subthm]{Lemma}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{subdefn}[subthm]{Definition}
+\newtheorem{exmp}[thm]{Example}
+\newtheorem{subexmp}[subthm]{Example}
+\newtheorem{qstn}[thm]{Question}
+\swapnumbers
+\newtheorem{subqstn}[subthm]{Question}
+\swapnumbers
+\newtheorem{xrcs}[thm]{Exercise}
+\newtheorem{subxrcs}[subthm]{Exercise}
+\newtheorem{alg}[thm]{Algorithm}
+\newtheorem{subalg}[subthm]{Algorithm}
+\theoremstyle{remark}
+\newtheorem{remk}[thm]{Remark}
+\newtheorem{subremk}[subthm]{Remark}
+\newtheorem{notn}[thm]{Notation}
+\newtheorem{subnotn}[subthm]{Notation}
+\newtheorem{impnotn}[thm]{Important Notation}
+\newtheorem{anncon}[thm]{Annoying Convention}
+\newtheorem{conv}[thm]{Convention}
+\newtheorem{subconv}[subthm]{Convention}
+\newtheorem{warn}[thm]{Warning}
+\newtheorem{aside}[thm]{Aside}
+\newtheorem{subaside}[subthm]{Aside}
+
+% CS 245
+\newcommand{\encircle}[1]{\tikz\node[draw,circle]{#1};}
+\newcommand{\T}{\text{T}}
+\newcommand{\F}{\text{F}}
+\newcommand{\X}{\text{X}}
+\newcommand{\imp}{\rightarrow}
+\newcommand{\prvs}{\vdash}
+
+% MATH 245
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\Col}{\operatorname{Col}}
+\newcommand{\Row}{\operatorname{Row}}
+\newcommand{\Span}{\operatorname{Span}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\trace}{\operatorname{trace}}
+\newcommand{\chr}{\operatorname{char}}
+\newcommand{\subsp}{\leq}
+\newcommand{\Range}{\operatorname{Range}}
+\newcommand{\Null}{\operatorname{Null}}
+\newcommand{\proj}{\operatorname{proj}}
+\newcommand{\Free}{\operatorname{Free}}
+\newcommand{\tensor}{\otimes}
+\newcommand{\tr}{\operatorname{tr}}
+
+% PMATH 347
+\newcommand{\SL}[2]{\operatorname{SL}_{#1}(#2)}
+\newcommand{\GL}[2]{\operatorname{GL}_{#1}(#2)}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\iso}{\cong}
+\newcommand{\sg}{\leq}
+\newcommand{\nsg}{\trianglelefteq}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Inn}{\operatorname{Inn}}
+\newcommand{\stab}{\operatorname{stab}}
+\newcommand{\orb}{\operatorname{orb}}
+\newcommand{\Fix}{\operatorname{Fix}}
+
+% MATH 247
+\newcommand{\Int}[2]{\operatorname{Int}_{#1}\left(#2\right)}
+\newcommand{\Cl}[2]{\operatorname{Cl}_{#1}\left(#2\right)}
+\newcommand{\closure}[1]{\overline{#1}}
+\newcommand{\grad}{\nabla}
+\def\binom#1#2{{#1 \choose #2}}%
+
+% CS 245
+\newcommand{\faint}{$\forall_{\mathrm{i}}\ $}
+\newcommand{\exint}{$\exists_{\mathrm{i}}\ $}
+\newcommand{\impint}{$\imp_{\mathrm{i}}\ $}
+\newcommand{\notint}{$\lnot_{\mathrm{i}}\ $}
+\newcommand{\orint}{$\lor_{\mathrm{i}}\ $}
+\newcommand{\faelim}{$\forall_{\mathrm{e}}\ $}
+\newcommand{\exelim}{$\exists_{\mathrm{e}}\ $}
+\newcommand{\impelim}{$\imp_{\mathrm{e}}\ $}
+\newcommand{\notelim}{$\lnot_{\mathrm{e}}\ $}
+\newcommand{\orelim}{$\lor_{\mathrm{e}}\ $}
+\newcommand{\andelim}{$\land_{\mathrm{e}}\ $}
+\newcommand{\botelim}{$\bot_{\mathrm{e}}\ $}
+\newcommand{\hoarel}{\llparenthesis \,}
+\newcommand{\hoarer}{\, \rrparenthesis}
+
